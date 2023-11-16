@@ -12,13 +12,119 @@
 </head>
 
 <body>
+
+  <div id="cursor"></div>
+  <div id="aura"></div>
+
   <div class="wrapper">
 
-    
+    <section class="galery">
 
+      <div class="frame">
+        <div class="frame__content">
+          <h2>beautiful world</h2>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="frame__content">
+          <div class="frame__media frame__media-left" style="background-image: url('./../images/1.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <video class="frame__media frame__media-right" src="./media/video_optimized.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content text-right">
+          <h3>pure planet</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum officiis tenetur voluptas nisi deleniti
+            minima similique aliquam fugiat amet perferendis quam vel, repellendus minus veniam, dolores tempora
+            temporibus sapiente quisquam quae odio earum magni! Blanditiis enim, corporis saepe ipsa sapiente incidunt
+            minima ut. In, necessitatibus commodi molestiae mollitia reprehenderit qui.</p>
+        </div>
+      </div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media-left" style="background-image: url('./../images/2.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media-right" style="background-image: url('./../images/3.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content text-left">
+          <h3>ask the mountains</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum officiis tenetur voluptas nisi deleniti
+            minima similique aliquam fugiat amet perferendis quam vel, repellendus minus veniam, dolores tempora
+            temporibus sapiente quisquam quae odio earum magni!</p>
+        </div>
+      </div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media-right" style="background-image: url('./../images/4.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content">
+          <video class="frame__media frame__media-left" src="./media/video_optimized.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media-right" style="background-image: url('./../images/5.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="frame frame-bg">
+        <div class="frame__content">
+          <video class="frame__media" src="./media/video_optimized.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content">
+          <h3>nesen</h3>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+    </section>
+
+  </div>
+  <div class="audioplay paused" id="links">
+    <p class="audioplay__label">click to play music</p>
+    <img class="audioplay__btn" src="./images/sound.gif" alt="icon">
+    <audio class="audioplay__audio" src="./media/ambient.mp3" loop></audio>
   </div>
 </body>
 
-<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.js" defer></script>
+<script src="js/main.js" defer></script>
 
 </html>
