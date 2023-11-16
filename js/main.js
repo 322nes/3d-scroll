@@ -1,3 +1,17 @@
+// loader
+
+function loader() {
+  const loader = document.querySelector('#loader');
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      loader.classList.add('preloader-hidden');
+    }, 1000)
+  });
+};
+
+loader();
+
 // 3D scroll
 
 let zSpasing = -1000; // Расстояние по оси Z
@@ -88,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     follower = document.getElementById('aura'),
     links = document.getElementById('links');
 
-    mouseX = 0, mouseY = 0, posX = 0, posY = 0
+  mouseX = 0, mouseY = 0, posX = 0, posY = 0
 
   function mouseCoords(e) {
 
@@ -124,15 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
 
-    links.addEventListener('mouseover', () => {
-      cursor.classList.add('active')
-      follower.classList.add('active')
-    })
+  links.addEventListener('mouseover', () => {
+    cursor.classList.add('active')
+    follower.classList.add('active')
+  })
 
-    links.addEventListener('mouseout', () => {
-      cursor.classList.remove('active')
-      follower.classList.remove('active')
-    })
+  links.addEventListener('mouseout', () => {
+    cursor.classList.remove('active')
+    follower.classList.remove('active')
+  })
 
 
   body.addEventListener('mouseout', () => {
