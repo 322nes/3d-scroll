@@ -6,7 +6,7 @@ function loader() {
   window.addEventListener('load', () => {
     setTimeout(() => {
       loader.classList.add('preloader-hidden');
-    }, 1000)
+    }, 1500)
   });
 };
 
